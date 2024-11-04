@@ -21,7 +21,7 @@ function App() {
             , an open-source project by Hitesh Choudhary, designed to make API
             learning accessible for students.
           </p>
-          <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-md shadow hover:bg-blue-700 transition duration-200">
+          <button className="px-6 py-3 bg-blue-600 shadow-lg shadow-blue-500/50 ... text-white font-semibold rounded-md hover:bg-blue-700 transition duration-200">
             Get Started
           </button>
         </main>
