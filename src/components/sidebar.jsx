@@ -10,9 +10,9 @@ const apiReference = [
     id: "1",
   },
   {
-    apiName: "Get user by id",
+    apiName: "Send JPEG image",
     requestType: "GET",
-    href: "get-user-by-id",
+    href: "get-jpg-image",
     id: "2",
   },
   {
