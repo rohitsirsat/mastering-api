@@ -212,14 +212,16 @@ const apiReference = [
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
     <div
-      className={`fixed top-0 left-0 w-80 bg-black text-white z-40 transform ${
+      className={`fixed top-0 left-0 flex flex-col w-80 bg-black text-white z-40 transform ${
         isOpen ? "translate-x-0" : "-translate-x-full"
       } transition-transform duration-300 ease-in-out md:translate-x-0`}
     >
-      <h2 className=" text-2xl font-semibold flex items-center justify-center h-16 border-b border-r border-gray-700">
-        API Endpoints
-      </h2>
-      <div className="flex-1 overflow-y-auto border-r border-gray-700">
+      <Link to={"/home"}>
+        <h2 className="text-2xl font-semibold flex items-center justify-center h-16 border-b border-r border-gray-700">
+          API Endpoints
+        </h2>
+      </Link>
+      <div className="scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thin scrollbar-thumb-slate-800 h-32 overflow-y-scroll flex-1 border-r border-gray-700 max-h-screen">
         <ul className="mt-4 px-4">
           {apiReference.map((apiref) => (
             <NavLink to={apiref.href} key={apiref.id} onClick={toggleSidebar}>
